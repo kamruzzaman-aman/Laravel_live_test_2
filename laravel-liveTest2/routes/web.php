@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use Illuminate\Http\Request;
 
+//Task-01
 Route::post('/form-submit', function (Request $request) {
     $email = $request->input('email');
     if ($email) {
@@ -21,6 +22,7 @@ Route::post('/form-submit', function (Request $request) {
 });
 
 
+//Task-02
 Route::get('/user-agent', function (Request $request) {
     $userAgent = $request->header('User-Agent');
     return response($userAgent);
